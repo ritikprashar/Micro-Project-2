@@ -4,59 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Delius+Unicase:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Dappr | Ritik Prashar</title>
 </head>
 <body>
-        <nav class="topnav">
-            <header><text>DaPPr</text></header>
-            <ul class="nav-links">
-                <li class="link"><a href="">Home</a></li>
-                <li class="link"><a  href="">About Us</a></li>
-                <li class="link"><a href="">Information</a></li>
-                <li class="link"><a href="">More<img class="drop" src="drop.svg"></a></li>
-                <li>
-
-                  <div class="search-bar">
-                    <button class="search-btn">
-                      <img id="search-icon" src="search.svg" alt="search button" />
-                    </button>
-                    <input
-                      type="text"
-                      name="search-input"
-                      class="search-input"
-                      placeholder="Search...."
-                    />
-                  </div>
-               </li>
-            </ul>
-           
-            <img class="vector" src="Vector.svg" alt=""/>       
-        </nav>
+    <div class="wrapper">
+        <header>
+          <p class="brand">Dappr</p>
+          <nav class="navigation-bar">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Information</p>
+            <p>More
+                <span>
+                    <img src="./Assets/drop.svg" alt="drop down" class="drop" />
+                </span>
+            </p>
+            <div class="search-bar">
+              <button class="search-btn">
+                <img src="./Assets/search.svg" alt="search button" width="80%" />
+              </button>
+              <input type="text" name="search-input" class="search-input" placeholder="Search...." />
+            </div>
+          </nav>
+          <img src="./Assets/Vector.svg" alt="menu" height="50%" />
+        </header>
         
         <div class="hero">
-          <div><img class="hero-img" src="image 4.png"></div>
-          <div><p class="textbox">It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a ......</p></div>
-          <div class="logo">
-            <div><img id="whatsapp" src="whatsapp-icon.svg"></div>
-            <div><img id="facebook" src="facebook.svg"></div>
-            <div><img id="twitter" src="twitter.svg"></div>
-          </div>   
+            <main class="main-section">
+
+                <div class="box-1">
+                    <div class="box-1-left">
+                        <img
+                        src="./Assets/image 4.png"
+                        alt="code"
+                        class="code-image"
+                        width="100%"
+                        height="100%"
+                        />
+                    </div>                  
+                    <div class="box-1-right">
+                        <p>
+                            It's not only writers who can benefit from this free online
+                            tool. If you're a programmer who's working on a ......
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <div class="box-2">
+                    <div class="card card-1">
+                        <p>Total Question's</p>
+                        <p>200,000</p>
+                    </div>
+                    <div class="card card-2">
+                        <p>Total Answer's</p>
+                        <p>105,000</p>
+                    </div>
+                    <div class="card card-3">
+                        <p>Participated</p>
+                        <p>10,000</p>
+                    </div>
+                    <div class="card card-4">
+                        <p>Total Passed</p>
+                        <p>6,000</p>
+                    </div>
+                </div>
+                
+
+                <div class="box-3">
+                    <div class="box-3-left">
+                        <button id="btn-1">YOUR INFO</button>
+                        <button id="btn-2">BOOKMARKS</button>
+                        <button id="btn-3">SETTINGS</button>
+                    </div>
+                    <div class="box-3-right">
+                        <p class="detail-heading">Your Information</p>
+                        <div class="details">
+                            <p class="detail-list">
+                                <span class="detail-category">Name </span>
+                                <span class="detail-value">Atul Singhal</span>
+                            </p>
+                            <p class="detail-list">
+                                <span class="detail-category">Email </span>
+                                <span class="detail-value">atul@gmail.com</span>
+                            </p>
+                            <p class="detail-list">
+                                <span class="detail-category">Phone</span>
+                                <span class="detail-value">+91 8131424888</span>
+                            </p>
+                            <p class="detail-list">
+                                <span class="detail-category">Marks</span>
+                                <span class="detail-value">500.00</span>
+                            </p>
+                        </div>
+                        <button class="next-button">
+                            <span>Next</span>
+                            <img 
+                            src="./Assets/Arrow.svg"
+                            alt="next arrow"
+                            class="next-arrow"
+                            width="18%"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </main>
+
+            <div class="help">
+                <img
+                src="./Assets/help.png"
+                alt="help icon"
+                class="help-icon"
+                width="90px"
+                height="90px"
+                />
+            </div>
+            
+            <div class="sidebar">
+                <div class="links">
+                    <div class="logo logo-1">
+                        <img
+                        src="./Assets/whatsapp.png"
+                        alt="whatsapp icon"
+                        width="90%"
+                        height="90%"
+                        />
+                    </div>
+                    <div class="logo logo-2">
+                        <img
+                        src="./Assets/facebook.png"
+                        alt="facebook icon"
+                        width="90%"
+                        height="90%"
+                        />
+                    </div>
+                    <div class="logo logo-3">
+                        <img
+                        src="./Assets/twitter.png"
+                        alt="twitter-icon"
+                        width="90%"
+                        height="90%"
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container">
-          <div class="item" id="itemA">Total Question’s <br><br>200,000</div>
-          <div class="item" id="itemB">Total Answer’s <br><br>105,000</div>
-          <div class="item" id="itemC">Participated <br><br>10,000</div>
-          <div class="item" id="itemD">Total Passed <br><br>6,000</div>
-        </div>
-
-    
-
-
 </body>
-</html>
-
+</html> 
